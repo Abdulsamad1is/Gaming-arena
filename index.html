@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>GAMING ARENA</h2>
+            <ul>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Instruction</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Welcome to Gaming Arena!</h1>
+            <p>Experience gaming like never before. Challenge your skills, explore new worlds, and join a community of passionate gamers.</p>
+            <div class="btn-group">
+                <a href="#">Play online</a>
+                <a href="#">Download</a>
+            </div>
+        </div>
+    </section>
+    <section class="cardSection">
+        <div class="card-container">
+            <!-- Repeat card structure for games -->
+            <div class="card">
+                <img src="cricket.jpg" alt="Cricket" height="140" width="180">
+                <h1>Cricket</h1>
+                <p>Join the cricket craze and test your skills!</p>
+            </div>
+            <div class="card">
+                <img src="lodo.jpg" alt="Lodu" height="140" width="180">
+                <h1>Lodu</h1>
+                <p>A classic game of strategy and fun!</p>
+            </div>
+            <div class="card">
+                <img src="football.jpg" alt="Football" height="140" width="180">
+                <h1>Football</h1>
+                <p>Score goals and lead your team to victory!</p>
+            </div>
+            <div class="card">
+                <img src="8 pools.jpg" alt="8 Pools" height="140" width="180">
+                <h1>8 Pools</h1>
+                <p>Enjoy a game of billiards with friends!</p>
+            </div>
+            <div class="card">
+                <img src="car raceing.jpg" alt="Car Racing" height="140" width="180">
+                <h1>Car Racing</h1>
+                <p>Race against time and become the champion!</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+            const navItems = document.querySelector('nav ul');
+            navItems.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
